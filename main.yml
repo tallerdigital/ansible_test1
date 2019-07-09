@@ -1,0 +1,6 @@
+---
+- hosts: all
+  sudo: yes
+  tasks:
+    - name: install nano
+      yum: name=nano update_cache=yes state=latest
